@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /*
+      min-width
+      max-width
+      0~400px blue
+      401px ~ 600px red
+      601 ~ yellow
+      */
+      @media (max-width: 400px) {
+        body {
+          background-color: blue;
+        }
+      }
+      @media (min-width: 401px) and (max-width: 600px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media (min-width: 601px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      @media print {
+        h1 {
+          font-size: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>안녕하세요</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti fugit
+      maiores aliquid cupiditate animi nisi perferendis quod laborum totam
+      mollitia recusandae inventore provident magnam iure, itaque accusantium?
+      Exercitationem, recusandae velit! Et neque beatae nisi omnis
+      necessitatibus non provident blanditiis soluta. Ea iusto magnam laboriosam
+      itaque quisquam eligendi! Ut quod incidunt aperiam nisi. Repellat eaque,
+      quasi consectetur deleniti explicabo temporibus at. Aut ipsum, quia cumque
+      accusantium impedit molestiae dignissimos pariatur itaque beatae aliquid
+      necessitatibus, quasi vitae esse odit dolorum eligendi, sapiente fugit
+      vero excepturi dolorem ea aspernatur sit magnam. Architecto, nesciunt.
+      Neque dolor nisi earum natus illum, autem aperiam deleniti, ullam est
+      temporibus quo quisquam architecto. Iure laboriosam sequi quae maxime fuga
+      sunt a repellendus quod unde. Sunt animi temporibus consequatur! Assumenda
+      magnam officia iure veritatis eaque exercitationem nihil deserunt.
+      Expedita culpa maxime consectetur temporibus quod, ipsa iure repudiandae?
+      Hic quaerat non ratione accusantium error asperiores odio quam inventore
+      nihil dignissimos.
+    </p>
+  </body>
+</html>
