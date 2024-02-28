@@ -36,8 +36,18 @@ const myPromise = new Promise((resolve, reject) => {
 
 // resolve와 reject함수는 Promise에 콜백함수로 넘겨줬던 콜백함수의 파라미터로 전달해줌
 
+/**
+ * Promise chaining은 Promise 객체에 연속적으로 메소드를 호출하는 것
+ * then() 메소드에서 리턴하는 값은 Promise 객체이다.
+ * 하나의 Promise 객체에 대해서 메소드를 연속으로 호출하는 것을 Promise chaining이라고 함.
+ */
+
 // 비동기 작업 호출
 myPromise // 비동기 작업이 정상적으로 처리가 되었을 때(resolve)는 then이라는 함수의 콜백함수로 확인 가능
+  .then((result) => {
+    console.log('result: ', result);
+    return `선물은 : ${result}`; // return의 결과가 다음 then()의 파라미터로 들어감.
+  })
   .then((result) => {
     console.log('result: ', result);
   })
